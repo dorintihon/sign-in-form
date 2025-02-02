@@ -1,0 +1,60 @@
+/* Default styles (for larger screens like desktops) */
+body {
+    display: flex;
+}
+
+.main-container, .image-container {
+    border: 2px solid #0a0909;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.form-container {
+    border: 2px solid #0a0909;
+    
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 30%;
+    height: 100vh;
+}
+
+.main-text{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5%;
+    margin-top: 20px;
+}
+
+.button-container button{
+    display: flex;
+    margin-top: 20px;
+}
+  
+/* Tablet (768px and smaller) */
+@media screen and (max-width: 768px) {
+body {
+    font-size: 16px;
+    margin: 10px;
+}
+}
+
+/* Mobile (480px and smaller) */
+@media screen and (max-width: 480px) {
+body {
+    font-size: 14px;
+    margin: 5px;
+}
+}
+  
