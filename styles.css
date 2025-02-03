@@ -2,11 +2,13 @@
 body {
     display: flex;
     margin: 0;
+    background-color: #e9e9e9;
 }
 
 .main-container, .image-container {
     /* border: 2px solid #0a0909; */
     height: 100vh;
+    
 }
 
 .button-container, .footer, .form-container {
@@ -20,6 +22,7 @@ body {
     padding-right: 50px;
     padding-bottom: 50px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(222, 222, 222);
     
 }
 
