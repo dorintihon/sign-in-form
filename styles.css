@@ -1,28 +1,47 @@
 /* Default styles (for larger screens like desktops) */
 body {
     display: flex;
+    
 }
 
 .main-container, .image-container {
     border: 2px solid #0a0909;
     background-color: #f9f9f9;
     padding-top: 50px;
+    align-items: center;
+    
 }
+
+.button-container, .footer, .form-container {
+    padding-left: 50px;
+    margin-top: 50px;
+   
+}
+
 
 .form-container {
     border: 2px solid #0a0909;
-    
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px; /* Space between elements */
+    
+    width: 435px;
+    
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+    
+    width: 208px;
+    
 }
 
 .image-container {
@@ -33,13 +52,28 @@ body {
 .main-text{
     font-size: 24px;
     font-weight: bold;
-    margin: 5%;
-    margin-top: 20px;
+    padding-top: 100px;
+    padding-left: 50px;
 }
 
 .button-container button{
     display: flex;
-    margin-top: 20px;
+}
+
+.button-container{
+   
+}
+
+
+legend{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold; 
+}
+
+input{
+    width: 200px;
 }
   
 /* Tablet (768px and smaller) */
