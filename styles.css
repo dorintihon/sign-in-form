@@ -4,9 +4,8 @@ body {
     margin: 0;
 }
 
-
 .main-container, .image-container {
-    border: 2px solid #0a0909;
+    /* border: 2px solid #0a0909; */
     height: 100vh;
 }
 
@@ -17,10 +16,11 @@ body {
 
 
 .form-container {
-    border: 2px solid #0a0909;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    
 }
 
 fieldset {
@@ -28,6 +28,7 @@ fieldset {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px; /* Space between elements */
     width: 435px;
+    border: none; /* Removes border */
 }
 
 .form-group {
@@ -38,8 +39,12 @@ fieldset {
     
 }
 
+.main-container{
+    flex: 1;
+}
+
 .image-container {
-    width: 30%; /* Adjusts to parent width */
+    flex: 0 0 35%; /* Adjusts to parent width */
 }
 
 .image-container img {
@@ -58,8 +63,14 @@ fieldset {
 }
 
 .button-container button{
-    display: flex;
+    border: none;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
 }
+
+
 
 legend{
     padding-top: 20px;
@@ -68,9 +79,30 @@ legend{
     font-weight: bold; 
 }
 
-input{
-    width: 200px;
+.button-container button{
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
 }
+
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+
+input {
+    width: 200px;
+    border: 1px solid rgb(234, 234, 234); /* Default border */
+    border-radius: 3px;
+}
+
+/* Apply red border only after the user has interacted with the input */
+input:invalid:focus,
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
   
 /* Tablet (768px and smaller) */
 @media screen and (max-width: 768px) {
@@ -92,28 +124,25 @@ body{
 }
 
 fieldset {
+   
     display: flex;
     flex-direction: column; /* Stacks elements vertically */
     align-items: center; /* Centers horizontally */
-    border: none; /* Removes border */
     text-align: center;
-    background-color: red;
+    
+}
+
+.button-container, .footer, .form-container{
+    display: flex;
+    justify-content: center;
+    padding:0%;
+}
+
+.footer, fieldset{
+    margin-bottom: 20px;
 }
 
 
-
-
-
-legend {
-    font-size: 10px;
-
-}
 }
 
 /* Mobile (480px and smaller) */
-@media screen and (max-width: 480px) {
-legend{
-    font-size: 2px;
-}
-}
-  
