@@ -45,6 +45,22 @@ fieldset {
 
 .image-container {
     flex: 0 0 35%; /* Adjusts to parent width */
+    position: relative;
+}
+
+.title{
+    color: white;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    
 }
 
 .image-container img {
@@ -103,6 +119,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 1px solid red;
 }
 
+
   
 /* Tablet (768px and smaller) */
 @media screen and (max-width: 768px) {
@@ -145,4 +162,35 @@ fieldset {
 
 }
 
-/* Mobile (480px and smaller) */
+@media (prefered-color-scheme: dark) {
+    body {
+        background-color: #0a0909;
+    }
+    
+    .title {
+        background-color: #0a0909;
+    }
+    
+    .form-container {
+        background-color: #0a0909;
+    }
+    
+    .button-container button {
+        background-color: #596D48;
+    }
+    
+    a {
+        color: #596D48;
+    }
+    
+    input {
+        background-color: #0a0909;
+        color: white;
+    }
+    
+    input:invalid:focus,
+    input:invalid:not(:focus):not(:placeholder-shown) {
+        border: 1px solid red;
+    }
+    
+}
